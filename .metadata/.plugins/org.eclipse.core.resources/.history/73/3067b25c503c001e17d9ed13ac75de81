@@ -1,0 +1,21 @@
+package com.nishant.orderservice.service.impl;
+
+import java.util.UUID;
+
+import org.springframework.stereotype.Service;
+
+import com.nishant.orderservice.dto.OrderRequest;
+import com.nishant.orderservice.model.Order;
+import com.nishant.orderservice.service.OrderService;
+
+@Service
+public class OrderServiceImpl implements OrderService {
+	public void placeOrder(OrderRequest orderRequest) {
+		orderRequest.getOrderLineItemsDTO()
+			.stream()
+			.map(orderLineItem -> )
+		Order order = Order.builder()
+						.orderNumber(UUID.randomUUID().toString())
+						
+	}
+}
