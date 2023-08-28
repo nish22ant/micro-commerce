@@ -2,6 +2,8 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: order-service
   datasource:
     url: jdbc:mysql://localhost:3306/order_service
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -13,3 +15,10 @@ spring:
     hibernate:
       ddl-auto: create
     show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true

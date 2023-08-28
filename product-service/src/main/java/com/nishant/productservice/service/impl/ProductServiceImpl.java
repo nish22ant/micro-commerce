@@ -5,6 +5,7 @@ package com.nishant.productservice.service.impl;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.nishant.productservice.dto.ProductRequest;
 import com.nishant.productservice.dto.ProductResponse;
@@ -19,6 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 @RequiredArgsConstructor
 @Slf4j
+@Transactional
 public class ProductServiceImpl implements ProductService {
 	
 	private final ProductRepository productRepository;

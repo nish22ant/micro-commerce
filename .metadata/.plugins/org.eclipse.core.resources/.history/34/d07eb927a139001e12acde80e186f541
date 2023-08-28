@@ -1,5 +1,0 @@
-package com.nishant.orderservice.dto;
-
-public class OrderLineItemsDTO {
-
-}
